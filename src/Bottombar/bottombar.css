@@ -1,0 +1,103 @@
+.bottombar {
+  background: #2767df;
+  color: #fff;
+  padding: 40px 4vw 18px 4vw;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.bottombar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 32px;
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 18px;
+}
+
+.bottombar-links {
+  display: flex;
+  gap: 64px;
+}
+
+.bottombar-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bottombar-col a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.98rem;
+  transition: color 0.2s;
+}
+.bottombar-col a:hover {
+  color: #9cb6f0;
+}
+
+.bottombar-social {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.bottombar-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  transition: box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(60, 60, 60, 0.1);
+}
+.bottombar-icon:hover {
+  box-shadow: 0 4px 16px rgba(60, 60, 60, 0.18);
+}
+
+.bottombar-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 18px;
+  font-size: 0.92rem;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.bottombar-legal {
+  display: flex;
+  gap: 24px;
+}
+
+.bottombar-legal a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.92rem;
+  transition: color 0.2s;
+}
+.bottombar-legal a:hover {
+  color: #9cb6f0;
+}
+
+@media (max-width: 700px) {
+  .bottombar-content {
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+  }
+  .bottombar-links {
+    gap: 32px;
+  }
+  .bottombar {
+    padding: 32px 2vw 12px 2vw;
+  }
+  .bottombar-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
