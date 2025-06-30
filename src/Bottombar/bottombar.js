@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./bottombar.css";
 import { FaInstagram } from "react-icons/fa";
 import { RiTwitterXFill } from "react-icons/ri";
@@ -10,9 +11,8 @@ const Bottombar = () => {
       <div className="bottombar-content">
         <div className="bottombar-links">
           <div className="bottombar-col">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Community</a>
+            <Link to="/">Home</Link>
+            <Link to="/about">About</Link>
           </div>
         </div>
         <div className="bottombar-social">

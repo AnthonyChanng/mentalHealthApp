@@ -4,11 +4,24 @@ import moodImg from "../assets/moodTracker.jpg";
 import journalImg from "../assets/journal.png";
 import quoteImg from "../assets/qotd.png";
 import boardImg from "../assets/bulletinBoard.jpg";
+import backgroundImg from "../assets/background.jpg";
 
 function Home() {
   return (
     <div className="container home-container">
-      <div className="home-intro">
+      <div
+        className="home-intro"
+        style={{
+          backgroundImage: `url(${backgroundImg})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          minHeight: "340px",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+        }}
+      >
         <h1 id="title">Your Mental Health Matters</h1>
         <h3 id="description">
           A safe space for support, growth, and healing. <br />

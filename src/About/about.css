@@ -1,0 +1,132 @@
+.about-container {
+  max-width: 1100px;
+  margin: 15vh auto 0 auto;
+  font-family: "Poppins", Arial, sans-serif;
+  background: #ffffff;
+}
+
+.about-title {
+  text-align: center;
+  color: #3383f7;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 40px 0 30px 0;
+}
+
+.values-section {
+  background: rgb(245, 245, 245);
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding: 5vh 0 9vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value-cards-list {
+  width: 90%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: none;
+}
+
+.value-row {
+  display: flex;
+  align-items: center;
+  padding: 32px 0 32px 0;
+  background: none;
+}
+
+.value-icon-col {
+  flex: 0 0 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.value-text-col {
+  flex: 1;
+  padding-left: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.value-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #3383f7;
+  margin-bottom: 8px;
+}
+
+.value-desc {
+  font-size: 1.05rem;
+  color: #222;
+  line-height: 1.6;
+}
+
+.value-divider {
+  width: 100%;
+  height: 1.5px;
+  background: #a6c4ec;
+  margin: 0 auto;
+}
+
+.team-list {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto 48px auto;
+  display: flex;
+  flex-direction: column;
+  background: none;
+}
+
+.team-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 0 32px 0;
+  background: none;
+}
+
+.team-name-col {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #3383f7;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+.team-title-col {
+  font-size: 1.25rem;
+  color: #222;
+  font-family: "Poppins", Arial, sans-serif;
+  text-align: right;
+}
+
+.team-divider {
+  width: 100%;
+  height: 1.5px;
+  background: #a6c4ec;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .team-row {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 28px 0 28px 0;
+  }
+  .team-title-col {
+    text-align: left;
+    margin-top: 8px;
+  }
+  .team-list {
+    width: 98%;
+  }
+}
