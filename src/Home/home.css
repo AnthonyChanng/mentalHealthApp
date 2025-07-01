@@ -5,6 +5,7 @@ html {
   font-family: "Segoe UI", Arial, sans-serif;
   background: rgb(255, 255, 255);
 }
+
 .home-intro {
   font-size: 1.5rem;
   margin-top: 10vh;
@@ -21,12 +22,10 @@ html {
 }
 
 .home-intro h1#title {
-  margin: 0 300px;
   background: linear-gradient(90deg, #5f84d4 0%, #9cb6f0 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  color: transparent;
   font-size: 2.5rem;
   margin: 0;
 }
@@ -87,7 +86,6 @@ html {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  color: transparent;
 }
 
 .features-subtitle {
@@ -169,12 +167,12 @@ html {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  color: transparent;
 }
 
 .feature-text.reverse {
   text-align: end;
 }
+
 .feature-desc {
   color: #222;
   font-size: 1.05rem;

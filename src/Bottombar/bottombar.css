@@ -4,6 +4,8 @@
   padding: 40px 4vw 18px 4vw;
   box-sizing: border-box;
   font-family: "Segoe UI", Arial, sans-serif;
+  position: absolute;
+  width: 100%;
 }
 
 .bottombar-content {

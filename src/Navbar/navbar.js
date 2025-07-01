@@ -20,8 +20,12 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="navbar-right">
-            <button className="login-btn">Log In</button>
-            <button className="get-started-btn">Get Started</button>
+            <Link to="/login" className="login-btn-link">
+              <button className="login-btn">Log In</button>
+            </Link>
+            <Link to="/signUp" className="signUp-btn-link">
+              <button className="get-started-btn">Get Started</button>
+            </Link>
           </div>
         </div>
       </nav>

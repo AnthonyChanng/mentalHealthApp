@@ -5,6 +5,7 @@ import journalImg from "../assets/journal.png";
 import quoteImg from "../assets/qotd.png";
 import boardImg from "../assets/bulletinBoard.jpg";
 import backgroundImg from "../assets/background.jpg";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -28,8 +29,12 @@ function Home() {
           Track your progress, access resoruces, and connect with others.
         </h3>
         <div className="home-buttons">
-          <button className="learn-more-btn">Already a member?</button>
-          <button className="join-community-btn">Join Community</button>
+          <Link to="/login" style={{ textDecoration: "none" }}>
+            <button className="learn-more-btn">Already a member?</button>
+          </Link>
+          <Link to="/signUp" style={{ textDecoration: "none" }}>
+            <button className="join-community-btn">Join Community</button>
+          </Link>
         </div>
       </div>
       <div className="home-features">

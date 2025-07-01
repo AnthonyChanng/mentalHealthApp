@@ -7,7 +7,7 @@ import { TbAccessPoint } from "react-icons/tb";
 
 const teamMembers = [
   { name: "Anthony Channg", title: "CEO", linkedin: "#" },
-  { name: "Arya Vaidya", title: "Lead Software Developer", linkedin: "#" },
+  { name: "Anthony Channg", title: "Lead Software Developer", linkedin: "#" },
 ];
 
 const values = [
