@@ -1,0 +1,134 @@
+.bulletin-bg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: linear-gradient(90deg, #4773d1 0%, #8cb9e9 100%);
+  min-height: 100vh;
+}
+
+.bulletin-board {
+  background: #e2c08d;
+  border-radius: 24px;
+  margin: 40px 0;
+  padding: 32px 24px 48px 24px;
+  box-shadow: 0 4px 24px rgba(60, 60, 60, 0.1);
+  min-width: 700px;
+  max-width: 900px;
+  min-height: 600px;
+  border: 0.25rem solid rgb(155, 155, 155);
+  position: relative;
+  overflow: visible;
+}
+
+.bulletin-header {
+  background: #6c8ae4;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 10px;
+  padding: 12px 0 10px 0;
+  margin: 0 auto 32px auto;
+  width: 60%;
+  box-shadow: 0 2px 8px rgba(60, 60, 60, 0.08);
+}
+
+.bulletin-notes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px 28px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 16px;
+}
+
+.bulletin-note {
+  width: 180px;
+  min-height: 140px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(60, 60, 60, 0.13);
+  padding: 18px 14px 14px 14px;
+  position: relative;
+  font-family: "Segoe UI", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  transition: box-shadow 0.2s, transform 0.2s;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+.bulletin-note-pin {
+  width: 18px;
+  height: 18px;
+  background: #e74c3c;
+  border-radius: 50%;
+  border: 2.5px solid #fff;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 1px 4px rgba(60, 60, 60, 0.13);
+}
+.bulletin-note-name {
+  font-weight: 700;
+  margin-bottom: 6px;
+  font-size: 1.08rem;
+  color: #333;
+}
+.bulletin-note-message {
+  font-size: 1rem;
+  color: #222;
+  margin-bottom: 2px;
+  word-break: break-word;
+}
+
+.bulletin-add-note {
+  background: #fff;
+  border: 2px dashed #bfc9e6;
+  color: #bfc9e6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border 0.2s, color 0.2s;
+  min-height: 140px;
+  min-width: 180px;
+}
+.bulletin-add-note:hover {
+  border: 2px solid #6c8ae4;
+  color: #6c8ae4;
+}
+.bulletin-add-dashed {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.bulletin-add-text {
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+@media (max-width: 1000px) {
+  .bulletin-board {
+    min-width: 0;
+    max-width: 98vw;
+    padding: 18px 2vw 32px 2vw;
+  }
+  .bulletin-header {
+    width: 90%;
+    font-size: 1.3rem;
+  }
+  .bulletin-note {
+    width: 140px;
+    min-height: 110px;
+    font-size: 0.95rem;
+    padding: 12px 8px 10px 8px;
+  }
+  .bulletin-add-note {
+    min-width: 140px;
+    min-height: 110px;
+  }
+}

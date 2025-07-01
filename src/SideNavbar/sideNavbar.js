@@ -4,7 +4,7 @@ import "./sideNavbar.css";
 
 const navSections = [
   { label: "Home", to: "/userHome" },
-  { label: "Bulletin Board", to: "/bulletinboard" },
+  { label: "Bulletin Board", to: "/bulletinBoard" },
   { label: "Quotes", to: "/quotes" },
   { label: "Journal", to: "/journal" },
   { label: "Account", to: "/account" },

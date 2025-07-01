@@ -1,0 +1,87 @@
+.quotes-bg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: linear-gradient(90deg, #4773d1 0%, #8cb9e9 100%);
+  min-height: 100vh;
+}
+
+.quotes-main-card {
+  background: #fff;
+  border-radius: 18px;
+  margin: 48px 0;
+  padding: 36px 48px 36px 48px;
+  box-shadow: 0 4px 24px rgba(60, 60, 60, 0.1);
+  min-width: 500px;
+  max-width: 700px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quotes-header {
+  color: #4e80df;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.quotes-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 14px;
+  background: transparent;
+}
+.quotes-table th {
+  background: #f7f8fa;
+  color: #23395d;
+  font-size: 1.08rem;
+  font-weight: 600;
+  padding: 12px 10px;
+  border-radius: 8px 8px 0 0;
+  border: none;
+}
+.quotes-table td {
+  background: #f7f8fa;
+  color: #222;
+  font-size: 1.05rem;
+  padding: 16px 14px;
+  border-radius: 8px;
+  border: none;
+  vertical-align: top;
+}
+.quotes-quote {
+  font-style: italic;
+  color: #314d8a;
+  font-size: 1.08rem;
+  font-weight: 500;
+}
+.quotes-author {
+  color: #4e80df;
+  font-weight: 600;
+  font-size: 1.01rem;
+  text-align: right;
+}
+
+.quotes-table th,
+.quotes-table td {
+  text-align: left;
+}
+
+@media (max-width: 700px) {
+  .quotes-main-card {
+    min-width: 0;
+    max-width: 98vw;
+    padding: 18px 2vw 18px 2vw;
+  }
+  .quotes-header {
+    font-size: 1.3rem;
+  }
+  .quotes-table th,
+  .quotes-table td {
+    font-size: 0.98rem;
+    padding: 8px 4px;
+  }
+}
