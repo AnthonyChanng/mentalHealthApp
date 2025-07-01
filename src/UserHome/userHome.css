@@ -1,0 +1,304 @@
+.userhome-bg {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+.userhome-main {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.userhome-greeting {
+  text-align: center;
+  background: linear-gradient(90deg, #5f84d4 0%, #9cb6f0 100%);
+  color: white;
+  padding: 5vh 0;
+  padding-left: 350px;
+  padding-right: 500px;
+}
+.userhome-greeting h2 {
+  margin: 0 0 4px 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.userhome-greeting p {
+  margin: 0;
+  font-size: 1.25rem;
+  opacity: 0.95;
+}
+
+.userhome-main .userhome-card:nth-child(odd) {
+  background: #fff;
+}
+.userhome-main .userhome-card:nth-child(even) {
+  background: #f7f8fa;
+}
+
+.userhome-card {
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 2px 8px rgba(60, 60, 60, 0.08);
+  padding: 50px 150px 50px 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 450px;
+  padding-right: 600px;
+}
+
+.userhome-mood-label {
+  font-weight: 600;
+  font-size: 1.08rem;
+  margin-bottom: 2px;
+}
+.userhome-mood-slider-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2px;
+  font-size: 1.35rem;
+}
+.emoji {
+  opacity: 0.7;
+  transition: opacity 0.2s, transform 0.2s;
+}
+.emoji.selected {
+  opacity: 1;
+  transform: scale(1.18);
+}
+.userhome-mood-slider {
+  width: 100%;
+  margin: 0 0 2px 0;
+  accent-color: #5f84d4;
+}
+.userhome-mood-desc {
+  text-align: center;
+  font-size: 1.01rem;
+  color: #4e80df;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+.userhome-mood-note {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 48px;
+  border-radius: 8px;
+  border: 1.5px solid #bfc9e6;
+  background: #f4f7fb;
+  color: #222;
+  font-size: 1rem;
+  padding: 8px 10px;
+  margin-bottom: 6px;
+  resize: none;
+  outline: none;
+  transition: border 0.2s;
+}
+.userhome-mood-note:focus {
+  border: 2px solid #4e80df;
+  background: #eaf1fb;
+}
+.userhome-btn {
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #4e80df 0%, #9fb1d3 100%);
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 10px 0;
+  box-shadow: 0 2px 8px rgba(124, 99, 255, 0.08);
+  transition: background 0.2s, transform 0.2s;
+}
+.userhome-btn:hover:not(:disabled) {
+  background: linear-gradient(90deg, #9fb1d3 0%, #4e80df 100%);
+  transform: scale(1.03);
+}
+.userhome-btn:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+.userhome-log-btn {
+  margin-top: 2px;
+}
+
+.userhome-quote {
+  background: linear-gradient(120deg, #5f84d4 0%, #9cb6f0 100%);
+  color: #000000;
+  align-items: flex-start;
+  gap: 12px;
+}
+.userhome-quote-text {
+  font-size: 1.08rem;
+  font-style: italic;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+.userhome-quote-btn {
+  width: 100%;
+  background: linear-gradient(90deg, #4e80df 0%, #9fb1d3 100%);
+  color: #fff;
+  border: none;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 10px 0;
+  box-shadow: 0 2px 8px rgba(124, 99, 255, 0.08);
+  transition: background 0.2s, transform 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  justify-content: center;
+}
+.userhome-quote-btn:hover:not(:disabled) {
+  background: linear-gradient(90deg, #9fb1d3 0%, #4e80df 100%);
+  color: #fff;
+  border: none;
+  transform: scale(1.03);
+}
+.userhome-quote-btn:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+.userhome-quote-icon {
+  font-size: 1.1rem;
+}
+
+.userhome-calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin-bottom: 4px;
+}
+.userhome-calendar-viewfull {
+  background: #fff;
+  color: #4e80df;
+  border: 2px solid #4e80df;
+  border-radius: 8px;
+  font-size: 0.98rem;
+  font-weight: 500;
+  padding: 3px 12px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+.userhome-calendar-viewfull:hover {
+  background: #f1f0f8;
+  color: #23395d;
+  border-color: #23395d;
+}
+.userhome-calendar-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 1rem;
+}
+.userhome-calendar-table th {
+  color: #4e80df;
+  font-weight: 600;
+  padding-bottom: 2px;
+}
+.userhome-calendar-table td {
+  padding: 2px 0;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  color: #222;
+  font-weight: 500;
+  background: none;
+  transition: background 0.2s, color 0.2s;
+}
+.userhome-calendar-table td.highlighted {
+  background: linear-gradient(90deg, #4e80df 0%, #9cb6f0 100%);
+  color: #fff;
+}
+
+.userhome-journal-label {
+  font-weight: 600;
+  font-size: 1.08rem;
+  margin-bottom: 2px;
+}
+.userhome-journal-input {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 48px;
+  border-radius: 8px;
+  border: 1.5px solid #bfc9e6;
+  background: #f4f7fb;
+  color: #222;
+  font-size: 1rem;
+  padding: 8px 10px;
+  margin-bottom: 6px;
+  resize: none;
+  outline: none;
+  transition: border 0.2s;
+}
+.userhome-journal-input:focus {
+  border: 2px solid #4e80df;
+  background: #eaf1fb;
+}
+.userhome-journal-btn {
+  margin-top: 2px;
+}
+
+.userhome-emergency {
+  background: #fff0f0;
+  color: #e74c3c;
+  align-items: flex-start;
+  gap: 8px;
+}
+.userhome-emergency-title {
+  font-weight: 700;
+  font-size: 1.08rem;
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.userhome-emergency-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 0.98rem;
+  margin-bottom: 2px;
+}
+.userhome-emergency-btn {
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.98rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 1px 4px rgba(231, 76, 60, 0.08);
+}
+.userhome-emergency-btn:hover {
+  background: #c0392b;
+  color: #fff;
+}
+
+@media (max-width: 500px) {
+  .userhome-main {
+    max-width: 98vw;
+    padding: 10px 0 18px 0;
+  }
+  .userhome-card {
+    padding: 12px 6vw 12px 6vw;
+  }
+  .userhome-greeting {
+    padding: 16px 0 8px 0;
+  }
+}
+
+/* Add this to your global CSS (e.g., index.css) if not already present: */
+/*
+body {
+  background: linear-gradient(90deg, #5f84d4 0%, #9cb6f0 100%);
+}
+*/

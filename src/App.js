@@ -12,21 +12,23 @@ import Navbar from "./Navbar/navbar";
 import Bottombar from "./Bottombar/bottombar";
 import Login from "./Login/login";
 import SignUp from "./SignUp/signUp";
-
+import UserHome from "./UserHome/userHome";
 function AppContent() {
   const location = useLocation();
   const isLogin = location.pathname === "/login";
   const isSignUp = location.pathname === "/signUp";
+  const isUserHome = location.pathname === "/userHome";
   return (
     <>
-      {!isLogin && !isSignUp && <Navbar />}
+      {!isLogin && !isSignUp && !isUserHome && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signUp" element={<SignUp />} />
+        <Route path="/userHome" element={<UserHome />} />
       </Routes>
-      {!isLogin && !isSignUp && <Bottombar />}
+      {!isLogin && !isSignUp && !isUserHome && <Bottombar />}
     </>
   );
 }

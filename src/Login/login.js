@@ -48,7 +48,7 @@ const Login = () => {
     e.preventDefault();
     if (validateForm()) {
       console.log("Login successful:", formData);
-      navigate("/");
+      navigate("/userHome");
     }
   };
 
